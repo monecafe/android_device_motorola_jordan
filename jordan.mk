@@ -107,6 +107,13 @@ PRODUCT_PACKAGES += \
 	Usb \
 	su
 
+# omap-merge tests
+PRODUCT_PACKAGES += com.ti.omap.omap_mm_library libflashhwrenderer camera_test
+# broken
+# PRODUCT_PACKAGES += libskiahw SkLibTiJpeg_Test
+# no need for omap4 lib, set this var
+BOARD_GPS_LIBRARIES := gps.jordan.so
+
 # Add DroidSSHd (dropbear) Management App - tpruvot/android_app_droidsshd @ github
 PRODUCT_PACKAGES += DroidSSHD
 
